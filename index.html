@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Abécédaire des Alcools — A à Z</title>
+  <meta name="description" content="26 boissons, de A à Z — recettes et ingrédients pour ne manquer aucun verre.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barre de progression -->
+  <div id="progress-bar" role="progressbar" aria-label="Progression dans l'abécédaire"></div>
+
+  <!-- ── HERO ── -->
+  <header id="hero">
+    <h1>
+      L'<span class="gold">Abécédaire</span>des Alcools
+    </h1>
+    <p class="subtitle">26 boissons &nbsp;·&nbsp; de A à Z &nbsp;·&nbsp; Santé 🥂</p>
+
+    <button id="scroll-hint" class="scroll-hint" aria-label="Défiler vers la première boisson">
+      Scroll
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- ── NAVIGATION LATÉRALE ── -->
+  <nav id="side-nav" aria-label="Navigation par boisson">
+    <!-- Points -->
+    <div class="nav-dots" role="list"></div>
+  </nav>
+
+  <!-- ── SLIDES (générés par JS) ── -->
+  <main id="slides-container" aria-label="Les 26 boissons"></main>
+
+  <footer>
+    Fait avec ❤️ &amp; <span>beaucoup de shots</span>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
